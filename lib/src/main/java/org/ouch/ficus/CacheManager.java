@@ -12,6 +12,7 @@ public class CacheManager {
 
     /**
      * Registers new cache in Cache Manager storage.
+     *
      * @param cache a new cache to register.
      */
     public void register(Cache cache) {
@@ -20,6 +21,7 @@ public class CacheManager {
 
     /**
      * Returns Cache object from Cache Manager storage if exists otherwise null.
+     *
      * @param cacheName cache name
      * @return Cache object or null
      */

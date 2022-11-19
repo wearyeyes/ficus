@@ -11,7 +11,7 @@ class CacheManagerTest {
 
     @Test
     void register() {
-        Cache<String, String> usersCache = new Cache<>(USERS_CACHE);
+        Cache<String, String> usersCache = new ConcurrentHashMapCache<>(USERS_CACHE);
         CacheManager usersCacheManager = new CacheManager();
 
         usersCacheManager.register(usersCache);
@@ -20,7 +20,7 @@ class CacheManagerTest {
 
     @Test
     void getCache() {
-        Cache<String, String> usersCache = new Cache<>(USERS_CACHE);
+        ConcurrentHashMapCache<String, String> usersCache = new ConcurrentHashMapCache<>(USERS_CACHE);
         CacheManager usersCacheManager = new CacheManager();
 
         usersCacheManager.register(usersCache);
